@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  
+  <title>Mundo pet</title>
+</head>
+<body>
+  <header id="title">
+    <div>
+      <h1>Sua agenda</h1>
+      <p>Aqui você pode ver todos os clientes e serviços agendados para hoje.</p>
+    </div>
+    <span id="calendar">
+      <img class="icon-calendar" src="./src/assets/calendar.svg" alt="">
+      <input id="date-selector" class="date" type="date" >
+    </span>
+  </header>
+
+  <main>
+
+    .
+    <header>
+      <span class="period">
+        <img src="./src/assets/sunrise.svg" alt="">
+        <strong>Manhã</strong>
+      </span>
+      <span>09h-12h</span>
+    </header>
+    
+    <ul id="schedules-morning" class="schedule">
+
+      <!--
+      <li class="schedule">
+        <span class="schedule-hour">09:00</span>
+        <div class="space">
+          <p class="client"><strong>Thor</strong> / João Souza</p>
+          <p class="service">Corte de Unhas</p>
+          <p class="remove">Remover agendamento</p>
+        </div>
+      </li> -->
+    </ul>
+
+    <header>
+      <span class="period">
+        <img src="./src/assets/cruelsun.svg" alt="">
+        <strong>Tarde</strong>
+      </span>
+      <span>13h-18h</span>
+    </header>
+    
+    <ul id="schedules-afternoon" class="schedule">
+
+      <!--
+      <li class="schedule">
+        <span class="schedule-hour">09:00</span>
+        <div class="space">
+          <p class="client" ><strong>Thor</strong> / João Souza</p>
+          <p class="service">Corte de Unhas</p>
+          <p class="remove">Remover agendamento</p>
+        </div>
+      </li>
+      <li class="schedule">
+        <span class="schedule-hour">09:00</span>
+        <div class="space">
+          <p class="client" ><strong>Thor</strong> / João Souza</p>
+          <p class="service">Corte de Unhas</p>
+          <p class="remove">Remover agendamento</p>
+        </div>
+      </li>
+      <li class="schedule">
+        <span class="schedule-hour">09:00</span>
+        <div class="space">
+          <p class="client" ><strong>Thor</strong> / João Souza</p>
+          <p class="service">Corte de Unhas</p>
+          <p class="remove">Remover agendamento</p>
+        </div>
+      </li> -->
+
+
+    </ul>
+
+    <header>
+      <span class="period">
+        <img src="./src/assets/moonlight.svg" alt="">
+        <strong>Noite</strong>
+      </span>
+      <span>19h-21h</span>
+    </header>
+    
+    <ul id="schedules-night" class="schedule">
+
+      <!-- <li class="schedule">
+        <span class="schedule-hour">09:00</span>
+        <div class="space">
+          <p class="client" ><strong>Thor</strong> / João Souza</p>
+          <p class="service">Corte de Unhas</p>
+          <p class="remove">Remover agendamento</p>
+        </div>
+      </li> -->
+
+    </ul>
+
+  <button type="button">Novo agendamento</button>
+
+  </main>
+
+  <section id="register">
+    
+    <form>
+      <div class="title">
+        <h1>Agende um atendimento</h1>
+        <p>Preencha os dados do cliente para realizar o agendamento:</p>
+      </div>
+      
+      <label for="person-name">Nome do tutor</label>
+      <div class="input-wrapper">
+        <img src="./src/assets/account.svg" alt="">
+        <input name="person-name" id="person-name"  type="text">
+      </div>
+
+      <label for="pet-name">Nome do pet</label>
+      <div class="input-wrapper">
+        <img src="./src/assets/paw.svg" alt="">
+        <input name="pet-name" id="pet-name"  type="text">
+      </div>
+
+      <label for="person-tell">Numero de telefone</label>
+      <div class="tell-wrapper">
+        <img src="./src/assets/telephone.svg" alt="">
+        <input name="person-tell" id="person-tell" type="text">
+      </div>
+
+      <label for="description">Descrição do serviço</label>
+      <div class="textarea-wrapper">
+        <textarea name="description" id="description"></textarea>     
+      </div>
+
+      <div class="date-hour">
+        <div class="date">
+          <label for="date">Data</label>
+          <div class="input-wrapper">
+            <img src="./src/assets/calendar.svg" alt="">
+            <input id="date"  type="date"> 
+          </div>
+        </div>
+
+        <div class="hour">
+          <label for="hour">Hora</label>
+          <div class="input-wrapper">
+            <img src="./src/assets/clock.svg" alt="">
+            <select name="hour" id="hour">
+            </select> 
+          </div>
+        </div>
+        
+      </div>
+
+      <button type="submit">Agendar</button>
+
+    </form>
+  </section>
+
+
+</body>
+</html>

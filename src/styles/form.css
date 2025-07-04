@@ -1,0 +1,130 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+  padding: 2.5rem;
+
+  & .title {
+    margin-bottom: 1.75rem;
+  }
+
+  & img {
+    width: 1.25rem;
+  }
+
+  & h1 {
+    font: var(--tight-title);
+    color: var(--content-primary);
+    margin-bottom: .25rem;
+  }
+
+  & p {
+    font: var(--inter-paragraph-medium);
+    color: var(--content-secondary);
+  }
+
+  & label {
+    font: var(--inter-label-medium);
+    color: var(--content-primary);
+  }
+}
+
+.input-wrapper, .tell-wrapper {
+  border: 1px solid var(--border-primary);
+  border-radius: .5rem;
+  padding: 0 .75rem;
+  align-items: center;
+  display: flex;
+  height: 3rem;
+  width: 100%;
+  gap: .25rem;
+}
+
+.textarea-wrapper{
+  border: 1px solid var(--border-primary);
+  border-radius: .5rem;
+  padding: 0 .75rem;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  gap: .25rem;
+  word-wrap: break-word;
+}
+
+.date-hour  {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+
+  & .date {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+  }
+
+  & .hour {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    width: 100%;
+  }
+
+}
+
+
+
+select {
+  width: 100%;
+  height: fit-content;
+  padding: .75rem;
+  background-color: var(--background-tertiary);
+  border: none;
+  color: var(--content-secondary);
+  box-sizing: border-box;
+  resize: none;
+}
+
+input, textarea {
+  all: unset;
+  display: block;
+  width: 100%;
+  height: fit-content;
+  padding: .75rem;
+  background-color: var(--background-tertiary);
+  border: none;
+  color: var(--content-secondary);
+  box-sizing: border-box;
+  resize: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: var(--content-secondary);
+  font: var(--inter-label-date);
+  cursor: pointer;
+  background: url("../assets/arrow.svg") no-repeat;
+  padding-bottom: .1rem; 
+}
+
+button {
+  display: flex;
+  width: 13rem;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  margin-left: 105%;
+  background-color: var(--content-brand);
+  font: var(--inter-label-large);
+  color: #050505;
+  text-transform: uppercase;
+  border-radius: .5rem;
+}
+
+button[type="submit"] {
+  margin-top: 1.5rem;
+  margin-left: auto;
+  width: 7.6rem;
+}
+
+
+  
+

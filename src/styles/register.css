@@ -1,0 +1,16 @@
+#register {
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(50%);
+  left: 50%;
+  transform: translate(-50%, -50%); /* move a caixa para o centro exato */
+  background-color: var(--background-tertiary);
+  width: 31rem;
+  height: 95vh;
+  color: white;
+  border-radius: 8px;
+  overflow-y: hidden;
+  display: none;
+}
+

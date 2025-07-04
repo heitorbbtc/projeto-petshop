@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;  
+}
+
+body {
+  padding: 3.8rem 5rem;
+  background-color: var(--background-primary);
+  width: 54.4rem;
+  margin: auto;
+  position: relative;
+  color: var(--content-secondary);
+  scroll-behavior: smooth;
+}
+
+:root {
+
+  /* Variavei das cores */
+  --content-primary: #FFFFFF;
+  --content-secondary: #98959D;
+  --content-tertiary: #666666;
+  --content-brand: #9282FA;
+
+  --background-primary: #151515;
+  --background-secondary: #1E1E1E;
+  --background-tertiary: #23242C;
+  --background-brand: #9282FA;
+  --background-highlights: #BDB4FA;
+
+  --border-primary: #3E3C41;
+  --border-secondary: #86818C;
+  --border-brand: #9282FA;
+  --border-divisor: #353339;
+
+  --accent-blue: #027DF0;
+  --accent-blue-light: #16487A;
+  --accent-yellow: #F0DC02;
+  --accent-yellow-light: #756E1B;
+  --accent-orange: #F09102;
+  --accent-orange-light: #75501B;
+
+  /* Variaveis de fontes */
+  --ff-inter-tight: "Inter Tight", sans-serif;
+  --tight-title: 700 1.5rem var(--ff-inter-tight);
+
+  --ff-inter: "Inter", sans-serif;
+  --inter-paragraph-medium: 500 .87rem var(--ff-inter);
+  --inter-paragraph-small: 500 .75rem var(--ff-inter);
+  --inter-label-date: 400 .95rem var(--ff-inter);
+  --inter-label-large: 700 1rem var(--ff-inter);
+  --inter-label-medium: 700 .87rem var(--ff-inter);
+  --inter-label-small: 700 .75rem var(--ff-inter);
+  --inter-link: 500 .75rem var(--ff-inter);
+
+}
+
+
+.disable {
+  pointer-events: none;   /* Desativa cliques, foco, hover etc */
+  filter: blur(2px);      /* Opcional: efeito visual de bloqueio */
+}
+
+
+html::-webkit-scrollbar {
+  width: 8px;
+}
+
+html::-webkit-scrollbar-track {
+  background: #1e1e1e; /* fundo da trilha */
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #5c5c5c;  /* cor do "botão" */
+  border-radius: 10px;
+  border: 2px solid #1e1e1e;  /* espaço entre trilha e thumb */
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background-color: #888;
+}
+
+/* Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #5c5c5c #1e1e1e;
+}
+
+.n-display {
+  display: none;
+}
+
+.displayOn {
+  display: none;
+}
