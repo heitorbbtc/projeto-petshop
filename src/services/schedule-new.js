@@ -6,7 +6,7 @@ export async function scheduleNew({name, pet, tell, service, date, scheduleHour,
     await fetch(`${apiConfig.baseURL}/schedules`, {
       method: "POST",
       headers: {
-        "Content-Type": "aplication/json"
+        "Content-Type": "application/json"
       },
       body: JSON.stringify({name, pet, tell, service, date, scheduleHour, id}),
     })

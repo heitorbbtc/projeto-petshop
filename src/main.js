@@ -15,3 +15,10 @@ import "./modules/schedules/cancel.js"
 import "./modules/form/submit.js"
 import "./modules/page-load.js"
 import "./modules/form/date-change.js"
+
+const newScheduleBtn = document.getElementById("new-schedule")
+const registerSection = document.getElementById("register")
+
+newScheduleBtn.addEventListener("click", () => {
+  registerSection.style.display = "block"
+})

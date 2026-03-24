@@ -13,6 +13,8 @@ const petName = document.getElementById("pet-name")
 const personTell = document.getElementById("person-tell")
 const description = document.getElementById("description")
 const hours = document.getElementById("hour")
+const registerSection = document.getElementById("register")
+const main = document.querySelector("main")
 
 
 // Data atual para o input, para formatar o input
@@ -67,7 +69,15 @@ form.onsubmit = async (event) => {
     id
   });
 
-  await schedulesDay(selectedDateMain.value || inputToday)
+   // 🔥 ATUALIZA A LISTA
+    await schedulesDay(selectedDateMain.value || inputToday)
+
+    // ✅ FECHA O FORMULÁRIO
+    registerSection.style.display = "none"
+    main.style.display = "block"
+
+    // 🧼 LIMPA O FORM (opcional, mas top)
+    form.reset()
 
   } catch (error) {
     console.log(error);

@@ -1,6 +1,6 @@
 #register {
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 50%;
   transform: translateY(50%);
   left: 50%;
@@ -14,3 +14,6 @@
   display: none;
 }
 
+.remove {
+  cursor: pointer;
+}
